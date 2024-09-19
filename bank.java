@@ -17,5 +17,15 @@ public class bank {
         System.out.println("Account added for: " + account.getCustomer().getName());
     }
 
+    // Retrieve an account by account number
+    public Account getAccount(int accountNumber) {
+        for (Account account : accounts) {
+            if (account.getAccountNumber() == accountNumber) {
+                return account;
+            }
+        }
+        System.out.println("Account not found.");
+        return null;
+    }
 }
 
