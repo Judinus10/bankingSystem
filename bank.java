@@ -11,6 +11,11 @@ public class bank {
         this.account= new ArrayList<>();
     }
 
-    
+    // Add a new account to the bank
+    public void addAccount(Account account) {
+        accounts.add(account);
+        System.out.println("Account added for: " + account.getCustomer().getName());
+    }
+
 }
 
