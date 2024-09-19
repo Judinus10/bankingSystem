@@ -32,5 +32,14 @@ public class bank {
      public String getBankName() {
         return bankName;
     }
+
+    // List all accounts in the bank
+    public void listAccounts() {
+        for (Account account : accounts) {
+            System.out.println("Account Number: " + account.getAccountNumber() + 
+                               ", Customer: " + account.getCustomer().getName() +
+                               ", Balance: " + account.getBalance());
+        }
+    }
 }
 
