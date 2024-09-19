@@ -27,5 +27,10 @@ public class bank {
         System.out.println("Account not found.");
         return null;
     }
+
+     // Get the name of the bank
+     public String getBankName() {
+        return bankName;
+    }
 }
 
