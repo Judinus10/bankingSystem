@@ -11,11 +11,30 @@ public class account {
     }
 
     public void deposit (double amount){
-        if(amount>0){
-            balance+=amount;
-            System.out.println("Depsit "+amount+" to Account "+ accountNum);
+        if (amount>100){
+            if(amount>0){
+                balance+=amount;
+                System.out.println("Depsit "+amount+" to Account "+ accountNum);
+            }else{
+                System.out.println("Double amount must be in positive!");
+            }    
         }else{
-            System.out.println("Double amount must be in positive!");
+            System.out.println("Deposit amount must more than 100");
         }
+        
+    }
+
+    public void withdraw(double amount){
+        if(amount>0){
+            if(amount<balance){
+                balance-=amount;
+                System.out.println("Withdraw "+amount+" From Account No "+accountNum);
+            }else{
+                System.out.println("Insufficient Balance!");
+            }
+        }else{
+            System.out.println("Invalid amount!");
+        }
+        
     }
 }
