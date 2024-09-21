@@ -51,4 +51,16 @@ public class account {
             System.out.println("Transfer failed due to invalid amount");
         }
     }
+
+    public double getBalance(){
+        return balance;
+    }
+
+    public int getAccountNumber(){
+        return accountNum;
+    }
+
+    public customer getCustomer(){
+        return customer;
+    }
 }
