@@ -26,4 +26,28 @@ public class transaction {
         this.fromAccountNumber = fromAccountNumber;
         this.toAccountNumber = toAccountNumber;
     }
+
+    public int getTransactionID() {
+        return transactionID;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public int getFromAccountNumber() {
+        return fromAccountNumber;
+    }
+
+    public int getToAccountNumber() {
+        return toAccountNumber;
+    }
 }
