@@ -44,10 +44,20 @@ public class transaction {
     }
 
     public int getFromAccountNumber() {
-        return fromAccountNumber;
+        return fromAccNum;
     }
 
     public int getToAccountNumber() {
-        return toAccountNumber;
+        return toAccNum;
+    }
+
+    public void printTransaction() {
+        if (type.equals("transfer")) {
+            System.out.println("Transaction ID: " + transactionID + ", Type: " + type + ", Amount: " + amount +
+                    ", From Account: " + fromAccNum + ", To Account: " + toAccNum + ", Date: " + date);
+        } else {
+            System.out.println("Transaction ID: " + transactionID + ", Type: " + type + ", Amount: " + amount +
+                    ", Account: " + fromAccNum + ", Date: " + date);
+        }
     }
 }
