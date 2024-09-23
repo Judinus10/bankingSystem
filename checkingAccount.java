@@ -5,4 +5,12 @@ public class checkingAccount extends account {
         super(accountNumber, customer, initialBalance); // Call the constructor of the Account class
         this.overdraftLimit = overdraftLimit;
     }
+
+    public double getOverdraftLimit() {
+        return overdraftLimit;
+    }
+
+    public void setOverdraftLimit(double overdraftLimit) {
+        this.overdraftLimit = overdraftLimit;
+    }
 }
