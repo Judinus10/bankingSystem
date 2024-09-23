@@ -13,4 +13,17 @@ public class checkingAccount extends account {
     public void setOverdraftLimit(double overdraftLimit) {
         this.overdraftLimit = overdraftLimit;
     }
+
+    public void withdraw(double amount) {
+        if (amount > 0 && amount <= (getBalance() + overdraftLimit)) {
+            double newBalance = getBalance() - amount;
+            if (newBalance < 0) {
+                System.out.println("Overdraft used.");
+            }
+            // Set the new balance
+            super.withdraw(amount);
+        } else {
+            System.out.println("Withdrawal denied. Amount exceeds balance and overdraft limit.");
+        }
+    }
 }
