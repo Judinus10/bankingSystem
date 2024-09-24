@@ -14,5 +14,8 @@ public class bankingSystem {
         johnAccount.deposit(200.00);
         janeAccount.withdraw(150.00);
         johnAccount.transfer(janeAccount, 100.00);
+
+        System.out.println("John's Balance: " + johnAccount.getBalance());
+        System.out.println("Jane's Balance: " + janeAccount.getBalance());
     }
 }
