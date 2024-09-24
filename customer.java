@@ -1,9 +1,9 @@
-public class customer {
+public class Customer {
 
     private int customerID;
     public String name;
 
-    public customer (int customerID, String name){
+    public Customer (int customerID, String name){
         this.customerID=customerID;
         this.name=name;
     }

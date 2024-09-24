@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class transaction {
+public class Transaction {
     private int transactionID;
     private Date date;
     private String type;
