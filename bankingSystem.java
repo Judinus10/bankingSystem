@@ -10,5 +10,9 @@ public class bankingSystem {
 
         myBank.addAccount(johnAccount);
         myBank.addAccount(janeAccount);
+
+        johnAccount.deposit(200.00);
+        janeAccount.withdraw(150.00);
+        johnAccount.transfer(janeAccount, 100.00);
     }
 }
