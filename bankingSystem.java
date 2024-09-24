@@ -17,5 +17,7 @@ public class bankingSystem {
 
         System.out.println("John's Balance: " + johnAccount.getBalance());
         System.out.println("Jane's Balance: " + janeAccount.getBalance());
+
+        System.out.println("Transactions done.");
     }
 }
