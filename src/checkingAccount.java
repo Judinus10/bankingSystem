@@ -1,8 +1,8 @@
-public class CheckingAccount extends account {
+public class checkingAccount extends account {
     private double overdraftLimit;
 
-    public CheckingAccount(int accountNumber, Customer customer, double initialBalance, double overdraftLimit) {
-        super(accountNumber, customer, initialBalance); // Call the constructor of the Account class
+    public checkingAccount(int accountNumber, customer customer, double initialBalance, double overdraftLimit) {
+        super(accountNumber, initialBalance, customer); // Call the constructor of the Account class
         this.overdraftLimit = overdraftLimit;
     }
 

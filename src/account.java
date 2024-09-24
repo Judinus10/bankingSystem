@@ -1,10 +1,10 @@
-public class Account {
+public class account {
     
     private int accountNum;
     private double balance;
     public customer customer;
 
-    public Account (int accountNum, double balance, customer customer){
+    public account (int accountNum, double balance, customer customer){
         this.accountNum=accountNum;
         this.balance=balance;
         this.customer=customer;
@@ -63,4 +63,5 @@ public class Account {
     public customer getCustomer(){
         return customer;
     }
+
 }

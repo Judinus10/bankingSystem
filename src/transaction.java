@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Transaction {
+public class transaction {
     private int transactionID;
     private Date date;
     private String type;
@@ -9,22 +9,22 @@ public class Transaction {
     private int toAccNum;
 
     // Constructor for deposit/withdrawal transactions
-    public Transaction(int transactionID, String type, double amount, int accountNumber) {
+    public transaction(int transactionID, String type, double amount, int accountNumber) {
         this.transactionID = transactionID;
         this.date = new Date(); 
         this.type = type;
         this.amount = amount;
-        this.fromAccountNumber = accountNumber;
+        this.fromAccNum = accountNumber;
     }
 
     // Constructor for transfer transactions
-    public Transaction(int transactionID, String type, double amount, int fromAccountNumber, int toAccountNumber) {
+    public transaction(int transactionID, String type, double amount, int fromAccountNumber, int toAccountNumber) {
         this.transactionID = transactionID;
         this.date = new Date(); 
         this.type = type;
         this.amount = amount;
-        this.fromAccountNumber = fromAccountNumber;
-        this.toAccountNumber = toAccountNumber;
+        this.fromAccNum = fromAccountNumber;
+        this.toAccNum = toAccountNumber;
     }
 
     public int getTransactionID() {
