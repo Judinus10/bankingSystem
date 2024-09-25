@@ -1,8 +1,8 @@
 public class savingAccount extends account  {
     private double interestRate;
 
-    public savingAccount(int accountNum, Customer customer, double balance, double interestRate) {
-        super(accountNum, customer, balance); 
+    public savingAccount(int accountNum, customer customer, double balance, double interestRate) {
+        super(accountNum, balance, customer); 
         this.interestRate = interestRate;
     }
 
